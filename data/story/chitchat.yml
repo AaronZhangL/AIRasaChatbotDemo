@@ -36,15 +36,4 @@ stories:
   steps:
   - intent: thanks
   - action: utter_answer_thanks
-- story: who are you with greet
-  steps:
-  - intent: greet
-  - action: utter_answer_greet
-  - intent: whoareyou
-  - action: utter_answer_whoareyou
-- story: what to do with greet
-  steps:
-  - intent: greet
-  - action: utter_answer_greet
-  - intent: whattodo
-  - action: utter_answer_giveadvice
+

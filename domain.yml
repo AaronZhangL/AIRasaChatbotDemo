@@ -80,6 +80,10 @@ responses:
   - text: Hello! Glad to serve you. Please tell me the function you are looking for?
   - image: http://aimaksen.bslience.cn/hello.jpeg
     text: Hello! Next to meet you!
+  utter_answer_greet:
+  - text: yes, could you help
+  - text: could you help
+  - text: could you support me
   utter_answer_affirm:
   - text: OK
   - text: OK, It's nice to help you
