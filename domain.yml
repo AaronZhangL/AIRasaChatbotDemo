@@ -112,12 +112,5 @@ responses:
   - text: You're welcome!
   - text: It doesn't matter!
   - text: It's my pleasure!
-actions:
-- utter_answer_affirm
-- utter_answer_deny
-- utter_answer_greet
-- utter_answer_goodbye
-- utter_answer_thanks
-- utter_answer_giveadvice
-- action_default_fallback
+actions: []
 e2e_actions: []
