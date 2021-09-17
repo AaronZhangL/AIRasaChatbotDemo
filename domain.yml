@@ -113,4 +113,5 @@ responses:
   - text: It doesn't matter!
   - text: It's my pleasure!
 actions: []
+forms: {}
 e2e_actions: []
