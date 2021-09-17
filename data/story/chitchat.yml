@@ -6,7 +6,7 @@ stories:
   - action: utter_answer_giveadvice
 - story: request advice
   steps:
-  - intent: utter_answer_greet
+  - intent: affirm
   - action: utter_give_advice
 - story: say affirm
   steps:
