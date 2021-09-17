@@ -5,113 +5,48 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- chitchat/greet:
-    use_entities: true
-- chitchat/goodbye:
-    use_entities: true
-- chitchat/giveadvice:
-    use_entities: true
-- chitchat/thanks:
-    use_entities: true
-- chitchat/deny:
-    use_entities: true
-- chitchat/affirm:
-    use_entities: true
-- chitchat/funny:
-    use_entities: true
-- chitchat/stop:
+- greet:
     use_entities: true
 - goodbye:
     use_entities: true
+- affirm:
+    use_entities: true
 - deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_question_cms:
     use_entities: true
 - thanks:
     use_entities: true
-- stop:
-    use_entities: true
-- chitchat:
-    use_entities: true
-- giveadvice:
-    use_entities: true
-- affirm:
-    use_entities: true
-- greet:
-    use_entities: true
-entities:
-- date_time
-- address
-- type
-- number
-- giveadvice
-slots:
-  date_time:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: false
-    influence_conversation: false
-  address:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: false
-    influence_conversation: false
-  type:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: false
-    influence_conversation: false
-  number:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: false
-    influence_conversation: false
-  giveadvice:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: false
-    influence_conversation: false
-  requested_slot:
-    type: rasa.shared.core.slots.AnySlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: false
+entities: []
+slots: {}
 responses:
-  utter_chitchat/greet:
-  - text: Hello! May I help you?
-  - text: Hello! Glad to serve you. Please tell me the function you are looking for?
-  - image: http://aimaksen.bslience.cn/hello.jpeg
-    text: Hello! Next to meet you!
-  utter_answer_greet:
-  - text: yes, could you help
-  - text: could you help
-  - text: could you support me
-  utter_answer_affirm:
-  - text: OK
-  - text: OK, It's nice to help you
-  - text: Do you have any others need to talk with me?
-  utter_answer_goodbye:
-  - text: Goodbye!
-  - text: See you next time!
-  - text: See you later!
-  - text: see you!
-  utter_answer_deny:
-  - text: Do you want leave?
-  - text: What's wrong?
-  - text: What's wrong? are you okay?
-  - text: What's wrong? waht happened?
-  - text: What's matter?
-  utter_answer_thanks:
-  - text: You are welcome.
-  - text: I am very honored
-  - text: Happy cooperation!
-  utter_answer_giveadvice:
+  utter_greet:
+  - text: Hey! How are you?
+  - text: Hello!
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_confirm_advice:
   - text: Is open source code first?
-  - text: Open source first, right?
   utter_give_advice:
   - text: Okay, let me find it, there is XXX open source CMS software that can be used.
-  utter_noworries:
-  - text: You're welcome!
-  - text: It doesn't matter!
-  - text: It's my pleasure!
+  utter_pleasure:
+  - text: You're welcome
+  - text: It's my pleasure
 actions: []
 forms: {}
 e2e_actions: []
