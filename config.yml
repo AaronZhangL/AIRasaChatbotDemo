@@ -9,3 +9,8 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_answer_goodbye
+pipeline: null

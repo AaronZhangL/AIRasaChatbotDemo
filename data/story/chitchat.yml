@@ -4,12 +4,8 @@ stories:
   steps:
   - intent: greet
   - action: utter_answer_giveadvice
-- story: request advice
-  steps:
   - intent: affirm
   - action: utter_give_advice
-- story: say affirm
-  steps:
   - intent: affirm
   - action: utter_answer_affirm
 - story: say no with greet
