@@ -29,6 +29,16 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_confirm_advice:
+  - text: "Is open source code first?"
+
+  utter_give_advice:
+  - text: "Okay, let me find it, there is XXX open source CMS software that can be used."
+
+  utter_pleasure:
+  - text: "You're welcome"
+  - text: "It's my pleasure"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -90,3 +90,17 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_question_cms
+  examples: |
+    - I want to build a CMS system. Do you have any good suggestions
+    - I want to build a CMS system
+    - I want to build a customer management system
+    - a customer management system
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks a lot
+    - thank you very much
+    - thanks for suport

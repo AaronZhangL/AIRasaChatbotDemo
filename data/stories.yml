@@ -28,3 +28,15 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: need advice
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_question_cms
+  - action: utter_confirm_advice
+  - intent: affirm
+  - action: utter_give_advice
+
+  - intent: thanks
+  - action: utter_pleasure
