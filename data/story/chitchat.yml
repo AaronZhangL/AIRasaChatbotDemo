@@ -3,16 +3,10 @@ stories:
 - story: greet
   steps:
   - intent: greet
-  - action: utter_answer_greet
+  - action: utter_answer_giveadvice
 - story: request advice
   steps:
-  - intent: giveadvice
-  - action: utter_answer_giveadvice
-- story: say affirm  with greet
-  steps:
-  - intent: greet
-  - action: utter_answer_greet
-  - intent: affirm
+  - intent: utter_answer_greet
   - action: utter_give_advice
 - story: say affirm
   steps:
