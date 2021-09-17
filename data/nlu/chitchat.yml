@@ -1,0 +1,94 @@
+version: "2.0"
+nlu:
+- intent: chitchat/greet
+  examples: |
+    - Hello
+    - good morning
+    - good morning dear
+    - good morning sir
+    - good morning my love
+    - good afternoon
+    - hello
+    - hi
+    - hello hello
+    - hoho
+    - Hello, I want to build a CMS system. Do you have any good suggestions
+    - I want to build a CMS system
+    - CMS system
+    - customer management system
+- intent: chitchat/goodbye
+  examples: |
+    - goodbye
+    - bye
+    - bye bye
+    - 88
+    - 886
+    - see you next time
+    - good night
+
+- intent: chitchat/giveadvice
+  examples: |
+    - I want to build a CMS system
+    - I need to build a CMS system
+    - I need a CMS system
+    - I want to build a customer management system
+    - I need to build a customer management system
+    - I need a customer management system
+    - I want to build a CMS system, do you have any good suggestions?
+    - I need to build a CMS system, do you have any good suggestions?
+    - I need a CMS system, , do you have any good suggestions?
+
+- intent: chitchat/thanks
+  examples: |
+    - thanks
+    - thank you
+    - you are so nice
+    - you are a good man
+    - thank you very much
+    - thanks so lot
+
+- intent: chitchat/deny
+  examples: |
+    - no
+    - not
+    - i don't want it
+    - i don't need
+    - it's ok
+    - not necessary
+    - it doesn't
+    - i don't think so
+    - don't agree
+    - that is not like this
+    - i don't agree with you
+    - not good
+    - it sounds not good
+    - absolutely not
+    - don't do that
+
+- intent: chitchat/affirm
+  examples: |
+    - got it
+    - yes
+    - of course
+    - good
+    - ok
+    - em
+    - nice
+    - I agree
+    - well done
+    - agree
+    - it look like good
+    - it sounds good
+    - the actually it is
+
+- intent: chitchat/stop
+  examples: |
+    - I don't want to continue
+    - You are so foolish
+    - YOu are so bad
+    - I don't like you
+    - It's ok
+    - I think you know nothing
+    - nothing
+    - I didn't get any information
+    - I guess your brain was broken

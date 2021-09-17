@@ -1,0 +1,56 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+- story: request advice
+  steps:
+  - intent: giveadvice
+  - action: utter_answer_giveadvice
+- story: say affirm  with greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: affirm
+  - action: utter_give_advice
+- story: say affirm
+  steps:
+  - intent: affirm
+  - action: utter_answer_affirm
+- story: say no with greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: deny
+  - action: utter_answer_deny
+- story: say no
+  steps:
+  - intent: deny
+  - action: utter_answer_deny
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_answer_goodbye
+- story: thanks with greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: thanks
+  - action: utter_answer_thanks
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_answer_thanks
+- story: who are you with greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: whoareyou
+  - action: utter_answer_whoareyou
+- story: what to do with greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  - intent: whattodo
+  - action: utter_answer_giveadvice

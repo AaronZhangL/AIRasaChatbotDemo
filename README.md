@@ -1,2 +1,3 @@
 # AIRasaChatbotDemo
-A Chatbot demo base on RASA frame
+A Chatbot demo base on RASA frame  
+(Base on https://github.com/BSlience/rasa-conversational-ai)
