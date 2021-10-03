@@ -1,0 +1,57 @@
+version: '3.0'
+# $ rasa --version
+# Rasa Version      :         2.8.6
+# Minimum Compatible Version: 2.8.0
+# Rasa SDK Version  :         2.8.2
+# Rasa X Version    :         0.42.2
+# Python Version    :         3.8.8
+services:
+
+  rasa:
+    image: rasa/rasa:latest-full
+    networks: ['rasa-network']
+    ports:
+      - "5005:5005"
+    volumes:
+      - "./:/app/"
+    command:
+      - train nlu
+      - test nlu
+      - data validate stories
+      - train core
+      - test core
+      - rasaa train
+      - run
+
+  # app:
+  #   image: rasa/rasa-sdk:latest
+  #   expose: 5055
+
+  action_server:
+    image: rasa/rasa-sdk:latest
+    networks: ['rasa-network']
+    ports:
+      - "5055:5055"
+    volumes:
+      - "./actions:/app/actions"
+
+  duckling:
+    image: rasa/duckling:latest
+    networks: ['rasa-network']
+    ports:
+      - "8000:8000"
+
+  # rasax:
+  #   image: rasa/rasa-x:latest
+  #   networks: ['rasa-network']
+  #   ports:
+  #     - "5002:5002"
+  #   volumes:
+  #     - ./:/app
+  #   command: rasa x --debug
+  #   depends_on:
+  #     - rasa
+  #   links: 
+  #     - rasa
+
+networks: {rasa-network: {}}

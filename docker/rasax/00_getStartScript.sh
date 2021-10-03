@@ -1,0 +1,1 @@
+curl -sSL -o install.sh https://storage.googleapis.com/rasa-x-releases/latest/install.sh
